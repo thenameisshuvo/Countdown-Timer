@@ -88,3 +88,41 @@ h1, .big-text {
     justify-content: center;
     align-items: center;
 }
+
+.countdown-elements {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+
+.countdown-elements:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .big-text {
+        font-size: 4rem;
+    }
+
+    .countdown-elements {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-shadow: 1px 1px 0 #333;
+    font-family: 'Poppins', sans-serif;
+}
