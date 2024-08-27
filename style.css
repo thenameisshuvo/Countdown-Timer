@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("https://images.unsplash.com/photo-1563514015335-ac9da75bdfaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1938&q=80");
+    background-image: url("https://shorturl.at/PfyA1");
     background-size: cover;
     background-position: center center;
 
@@ -62,11 +62,29 @@ h1 {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+h1, .big-text {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
 .countdown-container {
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.countdown-elements {
+    border-radius: 50%;
+    padding: 50px;
+    width: 220px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
